@@ -31,8 +31,6 @@ class MainActivity : BaseActivity() {
         Log.d("메인화면","onCreate 실행됨")
     }
 
-
-
     override fun onResume() {
         super.onResume()
         
