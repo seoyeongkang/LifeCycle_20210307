@@ -25,5 +25,18 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         
         Log.d("메인화면","onResume 실행됨")
+        
+//        가정 : 리스트뷰로 => 게시판이 구현된 상황
+//        게시글 목록을 자동 새로고침 : onResume에 새로고침 코드 작성
+    }
+
+    override fun onPause() {
+        super.onPause()
+        
+        Log.d("메인화면","onPause 실행됨")
+        
+//        자원소모가 많은 기능 (ex. GPS 위치 추적) => 화면에 안보여줘도 될때 일시 중지
+//        어떤 기능들은 사용하려고하면 onPause 편집을 강제 시킴
+        
     }
 }
